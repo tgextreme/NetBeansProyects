@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE equipoFutbol SYSTEM "parte1.dtd">
+<!---  A AQUÍ PONEMOS LAS CARACTERÍSTICAS PRINCIPALES DEL EQUIPO DE FÚTBOL,
+TERMINA EN "*" PARA DECIR QUE SÓLO HAY UN CAMPO POR LÍNEA -->
+<equipoFutbol>
+    <nombre>UD Almeria</nombre> 
+    <fundado>1989</fundado> 
+    <estadio>Estadio de los Juegos Mediterraneos</estadio> 
+    <aforo>15200 personas</aforo>
+<!--- A AQUI SE PONE LOS DATOS DE LA TEMPORADA (SE PONE EN AL FINAL
+DEL PARENTESIS EL "*" PARA QUE NO SE REPITA -->
+        
+        <temporada> 
+            <CualEs>2013-2014</CualEs> 
+            <DiaInicio>19</DiaInicio> 
+            <MesInicio>8</MesInicio> 
+            <DiaFinal>18</DiaFinal>
+            <MesFinal>5</MesFinal>
+            
+<!--- A AQUÍ SE PONE TODOS LOS DATOS DEL JUGADOR DIVIENDOLO EN DOS  
+SUBAPARTADOS, EL DE CARACTERÍSTICAS FÍSICAS Y SITUACIÓN LABORAL -->            
+            <JugadorDatos>
+                <ID>L1</ID> 
+                <nombre>Rodrigo Díaz Lozano</nombre> 
+                <alias>Rodri</alias> 
+                <proviene>FC Barcelona</proviene>
+                <CaracteristicasFisicas>
+                    <dorsal>10</dorsal> 
+                    <altura>1.78m</altura> 
+                    <peso>64 kg</peso> 
+ <!--- A AQUI SE PONE LAS DIFERENTES CARACTERÍSTICAS -->                   
+                    <FechaNacimiento>
+                        <diaNacimiento>6</diaNacimiento>
+                        <mesNacimiento>6</mesNacimiento>
+                        <anioNacimiento>1990</anioNacimiento>
+                    </FechaNacimiento> 
+                    
+                    <LugarNacimiento>Soria</LugarNacimiento>
+                </CaracteristicasFisicas> 
+
+<!--- A AQUI SE PONE LA FECHA DE NACIMIENTO POR AÑO MES Y DIA -->                
+                <situacionLaboral>
+                    <ExperienciaTiempo>7 meses 'esta temporada'</ExperienciaTiempo>
+                    <ExperienciaFuncion>titular</ExperienciaFuncion>		
+                    <EnElCampoEstaTemporada> 
+                        
+                        <goles>4</goles> 
+                        <TarjetaAmarilla>1</TarjetaAmarilla> 
+                        <TarjetaRoja>0</TarjetaRoja>
+                        
+                    </EnElCampoEstaTemporada>
+                </situacionLaboral>
+
+            </JugadorDatos>
+<!--- A AQUÍ SE PONE TODOS LOS DATOS DEL JUGADOR DIVIENDOLO EN DOS  
+SUBAPARTADOS, EL DE CARACTERÍSTICAS FÍSICAS Y SITUACIÓN LABORAL -->   
+
+            <JugadorDatos> 
+                <ID>L2</ID> 
+                <nombre>Jesús Fernández Sáez</nombre> 
+                <alias>Suso</alias> 
+                <proviene>Liverpool</proviene>
+<!--- A AQUÍ SE PONE TODOS LOS DATOS DEL JUGADOR DIVIENDOLO EN DOS  
+SUBAPARTADOS, EL DE CARACTERÍSTICAS FÍSICAS Y SITUACIÓN LABORAL --> 
+            <CaracteristicasFisicas> 
+                <dorsal>17</dorsal> 
+                <altura>1.76m</altura> 
+                <peso>70 kg</peso> 
+<!--- A AQUI SE PONE LA FECHA DE NACIMIENTO POR AÑO MES Y DIA -->                
+                <FechaNacimiento>
+                        <diaNacimiento>19</diaNacimiento>
+                        <mesNacimiento>11</mesNacimiento>
+                        <anioNacimiento>1993</anioNacimiento>
+                    </FechaNacimiento> 
+                <LugarNacimiento>Cadiz</LugarNacimiento>    
+            </CaracteristicasFisicas>
+     <!--- A AQUI SE PONE LAS DIFERENTES CARACTERÍSTICAS "EN EL CAMPO" -->             
+            <situacionLaboral> 
+                <ExperienciaTiempo>7 partidos</ExperienciaTiempo> 
+                <ExperienciaFuncion>6 partidos de titular, 1 de suplente</ExperienciaFuncion>		
+                
+                        <EnElcampoEstaTemporada> 
+                            <goles>1</goles> 
+                            <TarjetaAmarilla>3</TarjetaAmarilla> 
+                            <TarjetaRoja>0</TarjetaRoja>
+                        </EnElcampoEstaTemporada>
+            </situacionLaboral>
+                    
+            </JugadorDatos>
+        </temporada>
+		
+    
+	
+
+
+    </equipoFutbol>

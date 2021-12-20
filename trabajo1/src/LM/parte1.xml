@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"
+     standalone="no"?>
+<!DOCTYPE equipo SYSTEM "parte1.dtd">
+
+    <equipo nombre="UD Almeria" fundado="1989" 
+            estadio="Estadio de los Juegos Mediterraneos" 
+            aforo="15200 personas">
+
+        
+    <temporada CualEs="13/14" DiaInicio="19" MesInicio="8" DiaFinal="18" MesFinal="5">
+        <JugadorDatos ID="1" nombre = "Rodrigo Díaz Lozano" alias ="Rodri" proviene="FC Barcelona" >
+            <CaracteristicasFisicas dorsal="10" altura="1.78m" peso="64 kg" FechaNacimiento="6/6/1990" LugarNacimiento="Soria"/>
+            <situacionLaboral ExperienciaTiempo="7 meses 'esta temporada'" ExperienciaFuncion="titular">		
+                <EnElCampoEstaTemporada goles="4" TarjetaAmarilla="1" TarjetaRoja="0"/>
+            </situacionLaboral>
+			
+        </JugadorDatos>
+
+       
+            <JugadorDatos ID="2" nombre="Jesús Fernández Sáez" alias="Suso" proviene="Liverpool">
+                <CaracteristicasFisicas dorsal="17" altura="1.76m" peso="70 kg" FechaNacimiento="19/11/1990" LugarNacimiento="Cadiz"/>
+                <situacionLaboral ExperienciaTiempo="7 partidos" ExperienciaFuncion="6 de titular, 1 de suplente">		
+                    <EnElcampoEstaTemporada 
+                         goles="1" TarjetaAmarilla="3" TarjetaRoja="0"/>
+                </situacionLaboral>
+        </JugadorDatos>
+    </temporada>
+		
+    
+	
+
+
+    </equipo>
+ 

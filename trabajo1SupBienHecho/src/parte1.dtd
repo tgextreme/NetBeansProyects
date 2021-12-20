@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+
+<!---  A AQUÍ PONEMOS LAS CARACTERÍSTICAS PRINCIPALES DEL EQUIPO DE FÚTBOL,
+TERMINA EN "*" PARA DECIR QUE SÓLO HAY UN CAMPO POR LÍNEA -->
+
+<!ELEMENT equipoFutbol (temporada|aforo|estadio|fundado|nombre)*>
+
+<!--- A AQUI SE ESCRIBE EL NOMBRE DEL EQUIPO DE FUTBOL "PCDATA" INDICA
+QUE PUEDE SER CUALQUIER CARACTER -->
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!---A AQUÍ PONE LA FECHA EN EL EQUIPO DE FUTBOL GUE FUNCADO, "PCDATA" INDICA
+QUE PUEDE SER CUALQUIER CARACTER O NÚMERO.  -->
+
+<!ELEMENT fundado (#PCDATA)>
+
+<!--- A AQUI PONE QUÉ ESTADIO TIENE ESTE EQUIPO DE FÚTBOL -->
+<!ELEMENT estadio (#PCDATA)>
+
+<!--- A AQUI PONE CUANTAS PERSONAS PUEDEN ENTRAR EN EL ESTADIO DE
+FÚTBOL -->
+
+<!ELEMENT aforo (#PCDATA)>
+
+<!--- A AQUI SE PONE LOS DATOS DE LA TEMPORADA (SE PONE EN AL FINAL
+DEL PARENTESIS EL "*" PARA QUE NO SE REPITA -->
+
+<!ELEMENT temporada (JugadorDatos|MesFinal|DiaFinal|MesInicio|DiaInicio|CualEs)*>
+
+<!--- A AUI PONE EN QUE TEMPORADA ESTAMOS -->
+<!ELEMENT CualEs (#PCDATA)>
+
+<!---A AQUI PONE EL DÍA EN QUE SE INICIÓ LA TEMPORADA-->
+<!ELEMENT DiaInicio (#PCDATA)>
+
+<!--- A AQUI PONE EL MES EN EL QUE SE INICIÓ LA TEMPORADA -->
+<!ELEMENT MesInicio (#PCDATA)>
+
+<!--- A AQUÍ PONE EL DÍA FINAL DE LA TEMPORADA -->
+<!ELEMENT DiaFinal (#PCDATA)>
+
+<!--- A AQUÍ PONE EL MES DEL FINAL DE LA TEMPORADA -->
+<!ELEMENT MesFinal (#PCDATA)>
+
+<!--- A AQUÍ SE PONE TODOS LOS DATOS DEL JUGADOR DIVIENDOLO EN DOS  
+SUBAPARTADOS, EL DE CARACTERÍSTICAS FÍSICAS Y SITUACIÓN LABORAL -->
+
+<!ELEMENT JugadorDatos (situacionLaboral|CaracteristicasFisicas|proviene|alias|nombre|ID)*>
+
+<!--- A QUI SE PONE EL ID, YO LO HE PUESTO PARA QUE SEA LA "LLAVE MAESTRA"
+EN ESTA PECULIAR TABLA
+-->
+<!ELEMENT ID (#PCDATA)>
+
+<!--- A aqui HAY QUE PONER EL ALIAS DEL JUGADOR -->
+<!ELEMENT alias (#PCDATA)>
+
+<!--- A AQUI SE PONE DE DONDE PROVIEN E -->
+<!ELEMENT proviene (#PCDATA)>
+
+<!--- A AQUI SE PONE LAS DIFERENTES CARACTERÍSTICAS -->
+<!ELEMENT CaracteristicasFisicas (LugarNacimiento|FechaNacimiento|peso|altura|dorsal)*>
+
+<!--- A AQUI LA MEDIDA DEL DORSAL -->
+<!ELEMENT dorsal (#PCDATA)>
+
+<!--- A AQUI LA ALTURA -->
+<!ELEMENT altura (#PCDATA)>
+
+<!--- A AQUI EL PESO -->
+<!ELEMENT peso (#PCDATA)>
+
+<!--- A AQUI SE PONE LA FECHA DE NACIMIENTO POR AÑO MES Y DIA -->
+<!ELEMENT FechaNacimiento (anioNacimiento|mesNacimiento|diaNacimiento)*>
+
+<!--- EL DIA DE NACIMIENTO -->
+<!ELEMENT diaNacimiento (#PCDATA)>
+
+<!--- EL MES DE NACIMIENTO -->
+<!ELEMENT mesNacimiento (#PCDATA)>
+
+<!--- EL AÑO DE NACIMIENTO -->
+<!ELEMENT anioNacimiento (#PCDATA)>
+
+<!--- EL LUGAR DE NACIMIENTO -->
+<!ELEMENT LugarNacimiento (#PCDATA)>
+
+<!--- LA SITUACION LABORAL DEL JUGADOR -->
+<!ELEMENT situacionLaboral (EnElcampoEstaTemporada|EnElCampoEstaTemporada|ExperienciaFuncion|ExperienciaTiempo)*>
+
+<!--- LA EXPERIENCIA QUE TIENE -->
+<!ELEMENT ExperienciaTiempo (#PCDATA)>
+
+<!--- QUE FUNCIONES HA DESEMPEÑADO EN SU VIDA LABORAL -->
+<!ELEMENT ExperienciaFuncion (#PCDATA)>
+
+<!--- CARACTERÍSTICAS EN EL CAMPO -->
+<!ELEMENT EnElCampoEstaTemporada (TarjetaRoja|TarjetaAmarilla|goles)*>
+
+<!--- LOS GOLES QUE HA MARCADO -->
+<!ELEMENT goles (#PCDATA)>
+
+<!--- LAS TARJETAS AMARILLAS QUE HA TENIDO -->
+<!ELEMENT TarjetaAmarilla (#PCDATA)>
+
+<!--- LAS TARJETAS ROJAS QUE -->
+<!ELEMENT TarjetaRoja (#PCDATA)>
+
+<!--- NO SE PORQUE PERO ASI FUNCIONA -->
+<!ELEMENT EnElcampoEstaTemporada (TarjetaRoja|TarjetaAmarilla|goles)*>
+

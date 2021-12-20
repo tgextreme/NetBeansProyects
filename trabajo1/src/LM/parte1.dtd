@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/parte1.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE equipo SYSTEM "parte1.dtd">
+
+    <equipo>
+    ...
+    </equipo>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT equipo (temporada)*>
+<!ATTLIST equipo
+    aforo CDATA #IMPLIED
+    estadio CDATA #IMPLIED
+    fundado CDATA #IMPLIED
+    nombre CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT temporada (JugadorDatos)*>
+<!ATTLIST temporada
+    MesFinal CDATA #IMPLIED
+    DiaFinal CDATA #IMPLIED
+    MesInicio CDATA #IMPLIED
+    DiaInicio CDATA #IMPLIED
+    CualEs CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT JugadorDatos (situacionLaboral|CaracteristicasFisicas)*>
+<!ATTLIST JugadorDatos
+    proviene CDATA #IMPLIED
+    alias CDATA #IMPLIED
+    nombre CDATA #IMPLIED
+    ID CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT CaracteristicasFisicas EMPTY>
+<!ATTLIST CaracteristicasFisicas
+    LugarNacimiento CDATA #IMPLIED
+    FechaNacimiento CDATA #IMPLIED
+    peso CDATA #IMPLIED
+    altura CDATA #IMPLIED
+    dorsal CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT situacionLaboral (EnElcampoEstaTemporada|EnElCampoEstaTemporada)*>
+<!ATTLIST situacionLaboral
+    ExperienciaFuncion CDATA #IMPLIED
+    ExperienciaTiempo CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT EnElCampoEstaTemporada EMPTY>
+<!ATTLIST EnElCampoEstaTemporada
+    TarjetaRoja CDATA #IMPLIED
+    TarjetaAmarilla CDATA #IMPLIED
+    goles CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT EnElcampoEstaTemporada EMPTY>
+<!ATTLIST EnElcampoEstaTemporada
+    TarjetaRoja CDATA #IMPLIED
+    TarjetaAmarilla CDATA #IMPLIED
+    goles CDATA #IMPLIED
+  >
